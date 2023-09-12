@@ -1,24 +1,66 @@
 import logo from './logo.svg';
 import './App.css';
 
+import {
+  BrowserRouter,
+  Route,
+  Link,
+  Routes,
+  Outlet,
+  NavLink,
+  useParams,
+  useNavigate,
+} from 'react-router-dom';
+
+// page components
+import Home from './components/Home';
+import About from './components/About';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        {/* Navigation bar */}
+        <div class="topnav" id="myTopnav">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <a href="#code">Code</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Music
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="https://anwarlouis.bandcamp.com/">Bandcamp</a>
+              <a href="#">Soundcloud</a>
+              <a href="#">Archive</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Cool Stuff
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Mario Kart 8</a>
+              <a href="#">Gallery</a>
+              <a href="#">Links</a>
+            </div>
+          </div>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#9776;
+          </a>
+        </div>
+
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
