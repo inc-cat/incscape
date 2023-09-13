@@ -15,6 +15,7 @@ import {
 // page components
 import Home from './components/Home';
 import About from './components/About';
+import MarioKart8 from './components/MarioKart8';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="#">Mario Kart 8</a>
+              <a href="/mariokart8">Mario Kart 8</a>
               <a href="#">Gallery</a>
               <a href="#">Links</a>
             </div>
@@ -57,6 +58,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="mariokart8" element={<MarioKart8 />} />
           </Routes>
         </div>
       </div>
