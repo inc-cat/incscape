@@ -16,6 +16,7 @@ import {
 import Home from './components/Home';
 import About from './components/About';
 import MarioKart8 from './components/MarioKart8';
+import Archive from './components/Archive';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <div class="topnav" id="myTopnav">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-          <a href="#code">Code</a>
+          <a href="https://github.com/inc-cat">Code</a>
           <div class="dropdown">
             <button class="dropbtn">
               Music
@@ -33,8 +34,8 @@ function App() {
             </button>
             <div class="dropdown-content">
               <a href="https://anwarlouis.bandcamp.com/">Bandcamp</a>
-              <a href="#">Soundcloud</a>
-              <a href="#">Archive</a>
+              <a href="https://www.last.fm/user/championanwar">Last FM</a>
+              <Link to="/archive">Archive</Link>
             </div>
           </div>
           <div class="dropdown">
@@ -58,7 +59,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="mariokart8" element={<MarioKart8 />} />
+            <Route path="/mariokart8" element={<MarioKart8 />} />
+            <Route path="/archive" element={<Archive />} />
           </Routes>
         </div>
       </div>
