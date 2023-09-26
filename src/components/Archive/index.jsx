@@ -1,6 +1,9 @@
 import wirfos from './albumCovers/wirfos.jpg';
 import impressions2002 from './albumCovers/impressions2002.jpg';
 import structure from './albumCovers/structure.jpg';
+import incline from './albumCovers/inclineincline.jpg';
+import sunrise from './albumCovers/sunrise.jpg';
+import impressionsfuture from './albumCovers/impressionsfuture.jpg';
 
 export default function Archive() {
   return (
@@ -114,6 +117,92 @@ export default function Archive() {
           Art by Lovewin:{' '}
           <a href="https://bsky.app/profile/lovewin.bsky.social">BlueSky</a> |
           <a href="https://twitter.com/lovewin"> Twitter </a>
+        </div>
+      </div>
+      <div class="album-container">
+        <div>
+          <h1>incline incline</h1>
+        </div>
+        <div>
+          <h2>July 2018</h2>
+        </div>
+        <div>
+          <a href="https://anwarlouis.bandcamp.com/album/incline-incline">
+            <img src={incline} alt="incline incline (July 2018)" />
+          </a>
+          <div>
+            <p>
+              The inspiration behind this whole album is weird. It's just random
+              stuff I did or saw throughout my week that I'd come across and end
+              up writing a piece to. It's fun to hum tunes to yourself, get home
+              and just put stuff together.
+            </p>
+            <b>Some track names explained</b>
+            <ul>
+              <li>
+                ((Rest)): It was a random birb meme that I had accidentally
+                saved to my phone that I saw when scrolling through my phone.
+              </li>
+              <li>
+                Slade Grn Via Wool A: After work, I'd get the 19:41 from
+                Lewisham towards Slade Green and "Slade Grn Via Wool A" was what
+                the display on the train said.
+              </li>
+            </ul>
+          </div>
+          Art by Forgemane:{' '}
+          <a href="https://twitter.com/forgemane"> Twitter </a>
+        </div>
+      </div>
+      <div class="album-container">
+        <div>
+          <h1>Sunrise / Base</h1>
+        </div>
+        <div>
+          <h2>December 2017</h2>
+        </div>
+        <div>
+          <a href="https://anwarlouis.bandcamp.com/album/sunrise-base">
+            <img src={sunrise} alt="Sunrise / Base (December 2017)" />
+          </a>
+          <div>
+            <p>
+              This album is basically a pseudo vinyl release, track 1 and 3 were
+              going to be side A and the remaining tracks were to be on side B.
+              There isn't much about this to talk about, I had fun just making
+              tracks for the sake of making tracks related to words.
+            </p>
+          </div>
+          Art by Thomas Barba:{' '}
+        </div>
+      </div>
+
+      <div class="album-container">
+        <div>
+          <h1>Watching it rain from outer space</h1>
+        </div>
+        <div>
+          <h2>September 2023</h2>
+        </div>
+        <div>
+          <a href="https://anwarlouis.bandcamp.com/album/impressions-future-zone">
+            <img
+              src={impressionsfuture}
+              alt="Impressions: Future Zone (December 2016)"
+              title="Impressions: Future Zone (December 2016)"
+            />
+          </a>
+          <div>
+            <p>
+              All throughout me making music, people have always said that my
+              music sounds like "video game music", so I just ended up embracing
+              it at this point and making something that I considered to be
+              background music for video games.
+            </p>
+          </div>
+          Art by iloveui:{' '}
+          <a href="https://bsky.app/profile/kurobatte.bsky.social">BlueSky</a> |
+          <a href="https://twitter.com/kurobatte"> Twitter </a>
         </div>
       </div>
     </div>
