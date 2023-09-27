@@ -6,6 +6,12 @@ import structure from './albumCovers/structure.jpg';
 import incline from './albumCovers/inclineincline.jpg';
 import sunrise from './albumCovers/sunrise.jpg';
 import impressionsfuture from './albumCovers/impressionsfuture.jpg';
+import silentsunset from './albumCovers/silentsunset.jpg';
+import expaningcircles from './albumCovers/expaningcircle.jpg';
+import terminal from './albumCovers/terminal.jpg';
+import cloudportrait from './albumCovers/cloudportrait.jpg';
+import twelvehours from './albumCovers/twelvehours.jpg';
+import anwarinc from './albumCovers/anwarinc.jpg';
 
 export default function Archive() {
   return (
@@ -88,7 +94,12 @@ export default function Archive() {
         <a href="https://twitter.com/lovewin"> Twitter </a>
       </Album>
 
-      <Album title="incline incline" releaseDate="July 2018" coverArt={incline}>
+      <Album
+        title="incline incline"
+        releaseDate="July 2018"
+        coverArt={incline}
+        url="https://anwarlouis.bandcamp.com/album/incline-incline"
+      >
         <p>
           The inspiration behind this whole album is weird. It's just random
           stuff I did or saw throughout my week that I'd come across and end up
@@ -114,12 +125,16 @@ export default function Archive() {
         title="Sunrise / Base"
         releaseDate="December 2017"
         coverArt={sunrise}
+        url="https://anwarlouis.bandcamp.com/album/sunrise-base"
       >
         <p>
           This album is basically a pseudo vinyl release, track 1 and 3 were
           going to be side A and the remaining tracks were to be on side B.
           There isn't much about this to talk about, I had fun just making
-          tracks for the sake of making tracks related to words.
+          tracks for the sake of making tracks related to words. A huge shout
+          out to Eli Way for letting me remix Fresh, I dunno where to find it
+          online but it is one amazing song and I'd like to think I did it
+          justice.
         </p>
         Art by Thomas Barba:{' '}
       </Album>
@@ -128,16 +143,116 @@ export default function Archive() {
         title="Impressions: Future Zone"
         releaseDate="December 2016"
         coverArt={impressionsfuture}
+        url="https://anwarlouis.bandcamp.com/album/impressions-future-zone"
       >
         <p>
           All throughout me making music, people have always said that my music
           sounds like "video game music", so I just ended up embracing it at
           this point and making something that I considered to be background
           music for video games. A range of genres and styles inspired by games
-          such as F-Zero GX, Final Fantasy III and many others.
+          such as F-Zero GX, Final Fantasy III and many others. This marks the
+          start to my Impressions series, I intend it to be an ongoing series
+          with updates coming when I feel like making them,
         </p>
         Art by iloveui: <a href="https://iloveui.com/">Website</a> |
         <a href="https://twitter.com/weloveui"> Twitter </a>
+      </Album>
+
+      <Album
+        title="Silent Sunset"
+        releaseDate="July 2016"
+        coverArt={silentsunset}
+        url="https://anwarlouis.bandcamp.com/album/silent-sunset"
+      >
+        <p>
+          I don't normally do beat making projects with samples so I thought I'd
+          just do it. This was initially going to be a bunch of short clips that
+          all went into each other one after the other. I ended up being a lot
+          more inspired and a lot of these tracks became full length. Only the
+          first few tracks I made were short and attached to others.{' '}
+        </p>
+        Art by Thomas Barba:{' '}
+      </Album>
+
+      <Album
+        title="expanding circles"
+        releaseDate="November 2015"
+        coverArt={expaningcircles}
+        url="https://anwarlouis.bandcamp.com/album/expanding-circles"
+      >
+        <p>
+          This is the second part to the Cloud Portrait and expanding circles
+          duo. Unlike Cloud portrait, I went into each track with the mentality
+          of just messing around and seeing where things went. I'd make sounds
+          or rhythms and just improvise, there'd be no plan at all. All track
+          titles are the original project title and I named the album after the
+          second to last track. Hesoyam became a homage to Can You Feel It by
+          Mr. Fingers.
+        </p>
+      </Album>
+
+      <Album
+        title="Terminal"
+        releaseDate="September 2015"
+        coverArt={terminal}
+        url="https://anwarlouis.bandcamp.com/album/terminal"
+      >
+        <p>
+          Not much to say apart from that I made a random album inspired by
+          playing Crash Bandicoot games and watching my friend play games.
+        </p>
+        Art by KirameKirai: <a href="https://twitter.com/kirariinn">Twitter</a>
+      </Album>
+
+      <Album
+        title="Cloud Portrait"
+        releaseDate="July 2015"
+        coverArt={cloudportrait}
+        url="https://anwarlouis.bandcamp.com/album/cloud-portrait"
+      >
+        <p>
+          I listend to a couple of tracks, one being Swindon by Venetian Snares
+          and the other being Prophecy by Harold Haltermayer and the two just
+          instantly inspired me to make a synthpop inspired project. I pretty
+          much had an idea for the entire album before I'd even opened my DAW,
+          kept to the same idea and based the idea off of a concept for an album
+          that I have a lot of love for. This is the first of a two part album!
+        </p>
+        Art by KirameKirai: <a href="https://twitter.com/kirariinn">Twitter</a>
+      </Album>
+
+      <Album
+        title="12 Hours"
+        releaseDate="March 2015"
+        coverArt={twelvehours}
+        url="https://anwarlouis.bandcamp.com/album/12-hours"
+      >
+        <p>
+          I don't drink alcohol, but I have friends that do and this was me just
+          making a project inspired by the stories they'd tell me, from the
+          beginning to sometimes what might be a hangover or whatever else. It's
+          the soundtrack from the first drink until 12 hours later. I purposely
+          put a few production overlaps in the songs to add a small amount of
+          continuity to make the seemingly different tracks flow together a bit
+          more.
+        </p>
+        Art by Thomas Barba:{' '}
+      </Album>
+
+      <Album
+        title="anwar and inc"
+        releaseDate="May 2014"
+        coverArt={anwarinc}
+        url="https://anwarlouis.bandcamp.com/album/anwar-and-inc"
+      >
+        <p>
+          A project where the concept was my pet cat and I just flying and
+          taking the sights in. I was very inspired by early bass music and
+          dubstep and I'd never really pulled back from melodic writing before.
+          I felt that people were trying to put me in a box and this album was
+          to prove I could do it.
+        </p>
+        Art by KirameKirai: <a href="https://twitter.com/kirariinn">Twitter</a>
       </Album>
     </div>
   );
