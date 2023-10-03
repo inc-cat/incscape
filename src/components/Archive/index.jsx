@@ -12,8 +12,13 @@ import terminal from './albumCovers/terminal.jpg';
 import cloudportrait from './albumCovers/cloudportrait.jpg';
 import twelvehours from './albumCovers/twelvehours.jpg';
 import anwarinc from './albumCovers/anwarinc.jpg';
+import concentration1 from './albumCovers/concentration1.jpg';
+import concentration9 from './albumCovers/concentration9.jpg';
+import { useState } from 'react';
+import About from '../About';
 
 export default function Archive() {
+  const [extra, toggleExtra] = useState(true);
   return (
     <div>
       <Album
@@ -252,8 +257,36 @@ export default function Archive() {
           I felt that people were trying to put me in a box and this album was
           to prove I could do it.
         </p>
-        Art by KirameKirai: <a href="https://twitter.com/kirariinn">Twitter</a>
+        Art by KirameKirai: <a href="https://twitter.com/kirariinn">Twitter</a>{' '}
+        <br></br>Physical media available on bandcamp.
       </Album>
+
+      <Album
+        title="Concentration 1"
+        releaseDate="March 2014"
+        coverArt={concentration1}
+        url="https://anwarlouis.bandcamp.com/album/concentration-1"
+      >
+        Artwork by Tea
+      </Album>
+
+      <Album
+        title="Concentration 9"
+        releaseDate="January 2014"
+        coverArt={concentration9}
+        url="https://anwarlouis.bandcamp.com/album/concentration-9"
+      >
+        Artwork by Tea
+      </Album>
+
+      <button
+        onClick={function () {
+          toggleExtra(!extra);
+        }}
+      >
+        {extra ? 'Hide' : 'Show '}{' '}
+      </button>
+      {extra && <About />}
     </div>
   );
 }
