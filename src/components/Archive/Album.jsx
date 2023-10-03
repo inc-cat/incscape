@@ -1,3 +1,5 @@
+import './Album.css';
+
 export default function Album(props) {
   return (
     <div class="album-container">
