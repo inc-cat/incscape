@@ -229,7 +229,7 @@ export default function MarioKart8() {
   };
 
   return (
-    <>
+    <div className="mk8-table">
       <div style={{ width: 'fit-content' }}>
         <div style={{ width: '1000px' }}>
           <Line data={data} options={options} />
@@ -324,6 +324,6 @@ export default function MarioKart8() {
           {((incPodium / scores.length) * 100).toFixed(2)}%)
         </p>
       </div>
-    </>
+    </div>
   );
 }
