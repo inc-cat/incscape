@@ -18,7 +18,7 @@ import { useState } from 'react';
 import About from '../About';
 
 export default function Archive() {
-  const [extra, toggleExtra] = useState(true);
+  const [extra, toggleExtra] = useState(false);
   return (
     <div>
       <Album

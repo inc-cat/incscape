@@ -17,6 +17,7 @@ import Home from './components/Home';
 import About from './components/About';
 import MarioKart8 from './components/MarioKart8';
 import Archive from './components/Archive';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -45,7 +46,7 @@ function App() {
             </button>
             <div class="dropdown-content">
               <a href="/mariokart8">Mario Kart 8</a>
-              <a href="#">Gallery</a>
+              <a href="/gallery">Gallery</a>
               <a href="#">Links</a>
             </div>
           </div>
@@ -61,6 +62,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/mariokart8" element={<MarioKart8 />} />
             <Route path="/archive" element={<Archive />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </div>
       </div>
