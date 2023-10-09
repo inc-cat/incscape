@@ -4,10 +4,17 @@ import shortlands from './Shortlands.png';
 import ImageEntry from './ImageEntry';
 
 export default function Gallery() {
+  const [enlarge, setEnlarge] = useState(false);
+
   return (
-    <div class="gallery-image">
+    <div
+      class={enlarge ? 'gallery-image selected' : 'gallery-image'}
+      onClick={function () {
+        setEnlarge(!enlarge);
+      }}
+    >
       <ImageEntry image={shortlands} title="Shortlands at 6PM" artist="Kite">
-        <a href="http://www.twitter.com/">Twitter</a>
+        <a href="https://twitter.com/Kiteincolours">Twitter</a>
       </ImageEntry>
     </div>
   );
