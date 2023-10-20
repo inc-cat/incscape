@@ -12,11 +12,13 @@ export default function ImageEntry(props) {
       }}
     >
       <img src={props.image} />
-      <br></br>
-      <b>{props.title}</b>
-      <br></br>
-      <b>{props.artist}</b>
-      <p>{props.children}</p>
+      <div class="details">
+        <br></br>
+        <b>{props.title}</b>
+        <br></br>
+        <b>{props.artist}</b>
+        <p>{props.children}</p>
+      </div>
     </div>
   );
 }

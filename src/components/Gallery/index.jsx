@@ -1,6 +1,7 @@
 import shortlands from './Shortlands.png';
 import utopia from './Uptopia.png';
 import future from './future.png';
+import immersion from './immersion.png';
 import ImageEntry from './ImageEntry';
 
 export default function Gallery() {
@@ -18,6 +19,8 @@ export default function Gallery() {
         <a href="https://iloveui.com/">Website</a> |{' '}
         <a href="https://twitter.com/weloveui">Twitter</a>
       </ImageEntry>
+
+      <ImageEntry image={immersion} title="Immersion" artist="Zanarchy" />
     </div>
   );
 }
