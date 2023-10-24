@@ -36,6 +36,9 @@ function App() {
             <div class="dropdown-content">
               <a href="https://anwarlouis.bandcamp.com/">Bandcamp</a>
               <a href="https://www.last.fm/user/championanwar">Last FM</a>
+              <a href="https://listenbrainz.org/user/championanwar/">
+                ListenBrainz
+              </a>
               <Link to="/archive">Archive</Link>
             </div>
           </div>
