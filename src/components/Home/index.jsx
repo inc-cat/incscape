@@ -1,5 +1,20 @@
 import './Home.css';
 
+function KnowledgeGrid(props) {
+  return <div class="grid-container">{props.children}</div>;
+}
+
+function Knowledge(props) {
+  let { logo, label } = props;
+
+  return (
+    <div class="grid-item flex-thing">
+      <div className="logo">{logo}</div>
+      <div className="label">{label}</div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div>
@@ -12,28 +27,21 @@ export default function Home() {
         </div>
       </div>
       <h1>Music</h1>
-      <div class="grid-container">
-        <div class="grid-item">FL Studio Logo</div>
-        <div class="grid-item">Pro Tools Logo</div>
-        <div class="grid-item">FL Studio</div>
-        <div class="grid-item">Pro Tools</div>
-        <div class="grid-item">Reason Logo</div>
-        <div class="grid-item">Cubase Logo</div>
-        <div class="grid-item">Reason</div>
-        <div class="grid-item">Cubase</div>
-      </div>
+      <KnowledgeGrid>
+        <Knowledge logo="FL Studio Logo" label="FL Studio" />
+        <Knowledge logo="Pro Tools Logo" label="Pro Tools" />
+        <Knowledge logo="Reason Logo" label="Reason" />
+        <Knowledge logo="Cubase Logo" label="Cubase" />
+      </KnowledgeGrid>
 
       <h1>Programming</h1>
-      <div class="grid-container">
-        <div class="grid-item">Python Logo</div>
-        <div class="grid-item">JavaScript Logo</div>
-        <div class="grid-item">Python</div>
-        <div class="grid-item">JavaScript</div>
-        <div class="grid-item">React Logo</div>
-        <div class="grid-item">HTML Logo</div>
-        <div class="grid-item">React</div>
-        <div class="grid-item">HTML</div>
-      </div>
+
+      <KnowledgeGrid>
+        <Knowledge logo="Python Logo" label="Python" />
+        <Knowledge logo="JavaScript Logo" label="JavaScript" />
+        <Knowledge logo="React Logo" label="React" />
+        <Knowledge logo="HTML Logo" label="HTML" />
+      </KnowledgeGrid>
     </div>
   );
 }
