@@ -1,5 +1,5 @@
 import './MarioKart8.css';
-import { getScores } from '../api';
+import { getScores } from '../../api';
 import { useState, useEffect } from 'react';
 import { parse } from 'csv-parse/browser/esm/sync';
 import { Line } from 'react-chartjs-2';
